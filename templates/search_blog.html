@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <center>
+    {% if searched %} 
+        {% for blog in blogs %}
+            <h1>{{ blog }}</h1> - <img src="{{blog.photo.url}}"<br/>
+        {% endfor %}
+    {% else %}
+            <h1>hi! Qidirishni esindan chiqardiz</h1>
+    {% endif %}
+        
+    </center>
+
+{% endblock %}

@@ -1,0 +1,393 @@
+{% load static i18n %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bemet - Butcher & Meat Shop HTML Template</title>
+        <meta name="description" content="Bemet - Butcher & Meat Shop HTML Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="{% static 'image/x-icon'%}" href="{% static 'img/favicon.png' %}">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'css/odometer.css' %}">
+        <link rel="stylesheet" href="{% static 'css/jquery-ui.css'%}">
+        <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+        <link rel="stylesheet" href="{% static 'css/default.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    </head>
+    <body>
+
+        <!-- preloader -->
+        <div id="preloader">
+            <div id="loading-center">
+                <div class="loader">
+                    <div class="loader-outter"></div>
+                    <div class="loader-inner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader-end -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header class="transparent-header">
+            <div class="header-top-wrap-two">
+                <div class="container custom-container-three">
+                    <div class="header-top-wrap-inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="header-top-left-two">
+                                    <div class="header-lang">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                English
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                 <li><a href="http://127.0.0.1:8000/en/"><img  class="user-sub-menu-in-icon" src="" alt=""> English</a></li>
+                                                 <li><a href="http://127.0.0.1:8000/ru/"><img  class="user-sub-menu-in-icon" src="" alt="">Russian</a></li>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-top-social">
+                                        <ul class="list-wrap">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="logo logo-two">
+                                    <a href="index.html">
+                                        <img src="{% static 'img/logo/w_logo.png' %}" alt="Logo">
+                                        <div class="logo-shape">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 122" preserveAspectRatio="none">
+                                                <path d="M818-1h284l-20,108a15,15,0,0,1-15,15H853a15,15,0,0,1-15-15Z" transform="translate(-818)" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="header-top-right-two">
+                                    <div class="header-action d-none d-md-block">
+                                        <ul class="list-wrap">
+                                            <li class="header-account">
+                                                <a href="#"><i class="flaticon-account"></i></a>
+                                            </li>
+                                            <li class="header-search">
+                                                <a href="#"><i class="flaticon-search"></i></a>
+                                            </li>
+                                            <li class="header-shop-cart">
+                                                <a href="#"><i class="flaticon-shopping-basket"></i></a>
+                                            </li>
+                                            <li class="header-btn"><a href="tel:998903302029" class="btn">+99890 330-20-29</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="menu-area menu-area-two">
+                <div class="container custom-container-three">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="menu-wrap">
+                                <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                                <div class="logo d-none">
+                                    <a href="index.html"><img src="{% static 'img/logo/w_logo.png' %}" alt="Logo"></a>
+                                </div>
+                                <div class="logo sticky-logo d-none">
+                                    <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt="Logo"></a>
+                                </div>
+                                <nav class="menu-nav">
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li class="active menu-item-has-children"><a href="#">Home</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="index.html">Home One</a></li>
+                                                    <li class="active"><a href="index-2.html">Home Two</a></li>
+                                                    <li><a href="index-3.html">Home Three</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="about.html">ABOUT US</a></li>
+                                            <li class="menu-item-has-children"><a href="#">PRODUCTS</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="shop.html">Shop One</a></li>
+                                                    <li><a href="shop-2.html">Shop Two</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a  href="{% url 'blog:blog' %}">BLOG</a>
+                                                
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="#">PAGES</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="services.html">Services Page</a></li>
+                                                    <li><a href="services-details.html">Services Details</a></li>
+                                                    <li><a href="team-details.html">Team Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{% url 'contact:contact'%}">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="fas fa-times"></i></div>
+                                    <div class="nav-logo">
+                                        <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt="Logo"></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix list-wrap">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header-search -->
+            <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="search-wrap text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="search-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter your keyword...">
+                                        <button class="search-btn"><i class="flaticon-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-backdrop"></div>
+            <!-- header-search-end -->
+
+        </header>
+        <!-- header-area-end -->
+
+
+        <!-- main-area -->
+        <main>
+
+            <!-- slider-area -->
+            <section class="slider-area">
+                <div class="slider-active">
+                    <div class="single-slider slider-bg" data-background="{% static 'navbar_bemet.jpg' %}">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slider-content">
+                                        <div class="slider-icon" data-animation-in="fadeInUp" data-delay-in=".2" data-duration-in=".6">
+                                            <img src="{% static 'img/icons/slider_icon.png' %}" alt="">
+                                        </div>
+                                        <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".4" data-duration-in=".6">Fresh Meat</h2>
+                                        <span class="sub-title" data-animation-in="fadeInUp" data-delay-in=".6" data-duration-in=".6">Butcher & Meat shop</span>
+                                        <a href="shop.html" class="btn" data-animation-in="fadeInUp" data-delay-in=".8" data-duration-in=".6">order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slider slider-bg" data-background="{% static 'navbar2.jpg' %}">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slider-content">
+                                        <div class="slider-icon" data-animation-in="fadeInUp" data-delay-in=".2" data-duration-in=".6">
+                                            <img src="{% static 'img/icons/slider_icon.png' %}" alt="">
+                                        </div>
+                                        <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".4" data-duration-in=".6">Fresh Meat</h2>
+                                        <span class="sub-title" data-animation-in="fadeInUp" data-delay-in=".6" data-duration-in=".6">Butcher & Meat shop</span>
+                                        <a href="shop.html" class="btn" data-animation-in="fadeInUp" data-delay-in=".8" data-duration-in=".6">order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- slider-area-end -->
+        {% block content %}
+         
+        {% endblock  %}
+        <!-- footer-area -->
+        <footer>
+            <div class="footer-area">
+                <div class="footer-logo-area">
+                    <div class="container">
+                        <div class="footer-logo-wrap">
+                            <ul class="list-wrap">
+                                <li class="order-0 order-lg-2">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="{% static 'img/logo/w_logo.png' %}" alt=""></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer-social">
+                                        <ul class="list-wrap">
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="order-lg-3">
+                                    <div class="footer-newsletter">
+                                        <h4 class="title">Our Newsletter</h4>
+                                        <form action="#">
+                                            <input type="email" placeholder="Enter your email...">
+                                            <button type="submit">subscribe</button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="footer-widget">
+                                    <h4 class="fw-title">about andspa</h4>
+                                    <div class="footer-contact">
+                                        <ul class="list-wrap">
+                                            <li>Chirchik Sity Dom-3</li>
+                                            <li><a href="tel:0123456789">+99890 330 20 29</a></li>
+                                            <li><a href="mailto:info@bemet.com">info@bemet.com</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-content">
+                                        <h4 class="title">Open Hours</h4>
+                                        <p>Sunday to Friday <span>06:00-18:00</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="footer-widget">
+                                    <h4 class="fw-title">Important Links</h4>
+                                    <div class="footer-link">
+                                        <ul class="list-wrap">
+                                            <li><a href="contact.html">CURATION</a></li>
+                                            <li><a href="about.html">ABOUT US</a></li>
+                                            <li><a href="contact.html">MY ACCOUNT</a></li>
+                                            <li><a href="contact.html">CONTACT</a></li>
+                                            <li><a href="contact.html">SHIPPING & RETURNS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-4">
+                                <div class="footer-widget">
+                                    <h4 class="fw-title">CATEGORIES</h4>
+                                    <div class="footer-link">
+                                        <ul class="list-wrap">
+                                            <li><a href="contact.html">How to Order</a></li>
+                                            <li><a href="contact.html">Delivery Info</a></li>
+                                            <li><a href="contact.html">FAQs</a></li>
+                                            <li><a href="contact.html">Terms</a></li>
+                                            <li><a href="contact.html">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-8">
+                                <div class="footer-widget">
+                                    <h4 class="fw-title">instagram</h4>
+                                    <div class="footer-instagram">
+                                        <ul class="list-wrap">
+                                            <li><a href="#"><img src="{% static 'img/images/footer.jpg'%}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_2.jpg' %}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_3.jpg' %}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_4.jpg'%}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_5.jpg' %}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_6.jpg' %}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_7.jpg' %}" alt=""></a></li>
+                                            <li><a href="#"><img src="{% static 'img/images/footer_8.jpg' %}" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-7">
+                                <div class="copyright-text">
+                                    <p>© 2023 By <a href="index.html">Bemet</a>, All Rights Reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-5">
+                                <div class="footer-card text-end">
+                                    <img src="{% static 'img/images/card.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+        <!-- JS here -->
+        <script src="{% static 'js/vendor/jquery-3.6.0.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.odometer.min.js' %}"></script>
+        <script src="{% static 'js/jquery.appear.js' %}"></script>
+        <script src="{% static 'js/tween-max.min.js' %}"></script>
+        <script src="{% static 'js/slick.min.js' %}"></script>
+        <script src="{% static 'js/slick-animation.min.js' %}"></script>
+        <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'js/ajax-form.js' %}"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
