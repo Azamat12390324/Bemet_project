@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.forms.models import BaseModelForm
 from django.http import HttpResponse
-from django.shortcuts import render
 from blog.models import Blog, Post
 from django.views.generic import ListView, DetailView, CreateView
 from django.db.models import Count

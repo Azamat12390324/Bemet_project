@@ -2,13 +2,11 @@ from django.db import models
 from django.utils.translation import gettext as _
 from contact.abstract import BaseModel
 from ckeditor.fields import RichTextField
-from ckeditor_uploader.fields import RichTextUploadingField
 from django.utils.safestring import mark_safe
 from django.template.defaultfilters import truncatechars
 
 
-
-class Blog(BaseModel):
+class   Blog(BaseModel):
     title = models.CharField(max_length=255, help_text=_('Write title'), verbose_name=_('title'))
     author = models.CharField(max_length=30, help_text=_('Write author'), verbose_name=_('author'))
     photo = models.ImageField(upload_to='blog/photos/',verbose_name=_('photo'), default='default')
@@ -63,12 +61,13 @@ class PostTag(BaseModel):
 
 class Post(BaseModel):
     title = models.CharField(max_length=30, verbose_name=_('title'))
-    body = models.TextField(verbose_name=_('body'))
+    body = RichTextField()
     article = models.CharField(max_length=100)
     image = models.ImageField(upload_to='post_image/', verbose_name=_('image'))
     author = models.ForeignKey(Author, on_delete=models.RESTRICT, related_name="posts")
     tag = models.ManyToManyField(PostTag, verbose_name=_('tag'), related_name="posts")
 
+    
     def __str__(self) -> str:
         return f"{self.title[:15]}..."
     

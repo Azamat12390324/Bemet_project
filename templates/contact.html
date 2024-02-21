@@ -2,7 +2,11 @@
 {% load static i18n %}
 {% block content %}
  
-            <!-- breadcrumb-area -->
+
+
+
+
+<!-- breadcrumb-area -->
             <section class="breadcrumb-area tg-motion-effects breadcrumb-bg" data-background="{% static 'contact_navbar.jpg' %}">
                 <div class="container">
                     <div class="row">
@@ -11,7 +15,7 @@
                                 <h2 class="title">{% translate "Contact us" %}</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">{% translate "Home" %}</a></li>
+                                        <li class="breadcrumb-item"><a href="{% url 'home:home' %}">{% translate "Home" %}</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">{% translate "Contact" %}</li>
                                     </ol>
                                 </nav>
@@ -101,7 +105,7 @@
                                             <button type="submit">{% translate "Send Message" %}</button>
                                         </div>
                                     </form>
-                                    <p class="ajax-response mb-0"></p>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-6">

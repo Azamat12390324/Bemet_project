@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 from django.utils.translation import gettext_lazy as _
+from . import  jazzmin
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,20 +26,21 @@ DJANGO_APPS =[
 
 CUSTOM_APPS =[
     'contact',
+    'blog',
     'ckeditor',
-    'blog'
+    'about',
+    'shop',
+    'home',
+    'pages',
+    'regestration',
+    
     
 
 ]
 
-THIRD_PART_APPS =[
-    # 'ckeditor',
-    # 'ckeditor_uploader',
-
- ]
 
 
-INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PART_APPS
+INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -147,12 +149,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR / 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#ckeditor
-CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"
-CKEDITOR_UPLOAD_PATH = 'uploads/'
 
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'full',
-    },
-}
+
+
+
+
+
+

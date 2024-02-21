@@ -1,19 +1,17 @@
 {% extends "layouts/base.html" %}
 {% load static  i18n %}
 {% block content %}
-
-
             <!-- breadcrumb-area -->
             <section class="breadcrumb-area tg-motion-effects breadcrumb-bg" data-background="{% static 'img/blog/blog_navbar.jpg' %}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumb-content">
-                                <h2 class="title">Our Blog</h2>
+                                <h2 class="title">{% translate "Our Blog" %}</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="{% url 'blog:index'%}">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">our blog</li>
+                                        <li class="breadcrumb-item"><a href="{% url 'home:home' %}">{% translate "Home" %}</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">{% translate "our blog" %}</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -38,13 +36,13 @@
                                         <div class="blog-meta-two">
                                             <ul class="list-wrap">
                                                 <li><a href="#">{{ post.author }}</a></li>
-                                                <li><a href="#"><i class="far fa-comment-alt"></i>Comm (0)</a></li>
-                                                <li><a href="#"><i class="far fa-bookmark"></i>horse meat</a></li>
+                                                <li><a href="#"><i class="far fa-comment-alt"></i>{% translate "Comm" %} (0)</a></li>
+                                                <li><a href="#"><i class="far fa-bookmark"></i>{% translate "horse meat" %}</a></li>
                                             </ul>
                                         </div>
                                         <h2 class="title"><a href="{% url 'blog:blog_detail' post.pk %}">{{ post.title }}</a></h2>
                                         <p>{{ post.body }}</p>
-                                        <a href="{% url 'blog:blog_detail' post.pk %}" class="link-btn">Read more<i class="fas fa-angle-double-right"></i></a>
+                                        <a href="{% url 'blog:blog_detail' post.pk %}" class="link-btn">{% translate "Read more" %}<i class="fas fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +50,7 @@
                             <div class="col-lg-4 col-md-8">
                                 <div class="blog-sidebar">
                                     <div class="blog-widget">
-                                        <h4 class="sw-title">Search</h4>
+                                        <h4 class="sw-title">{% translate "Search" %}</h4>
                                         <div class="sidebar-search">
                                             <form action="#">
                                                 <input type="text" placeholder="Search...">
@@ -61,63 +59,42 @@
                                         </div>
                                     </div>
                                     <div class="blog-widget">
-                                        <h4 class="sw-title">Category</h4>
+                                        <h4 class="sw-title">{% translate "Category" %}</h4>
                                         <div class="sidebar-cat-list">
                                             <ul class="list-wrap">
-                                                <li><a href="#">Horse Meat <span>(3)</span></a></li>
-                                                <li><a href="#">Branding <span>(5)</span></a></li>
-                                                <li><a href="#">Gallery <span>(3)</span></a></li>
-                                                <li><a href="#">Fresh Meat <span>(2)</span></a></li>
+                                                <li><a href="#">{% translate "Horse Meat" %} <span>(3)</span></a></li>
+                                                <li><a href="#">{% translate "Branding" %} <span>(5)</span></a></li>
+                                                <li><a href="#">{% translate "Gallery" %} <span>(3)</span></a></li>
+                                                <li><a href="#">{% translate "Fresh Meat" %} <span>(2)</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="blog-widget">
                                         <h4 class="sw-title">Recent Post</h4>
+                                        {% for post1 in object_list %}
                                         <div class="rc-post-list">
                                             <div class="rc-post-item">
                                                 <div class="thumb">
-                                                    <a href="blog-details.html"><img src="{% static 'img/blog/post_img01.jpg' %}" alt=""></a>
+                                                    <a href="blog-details.html"><img src="{{post1.image.url}}" alt=""></a>
                                                 </div>
                                                 <div class="content">
-                                                    <h4 class="title"><a href="blog-details.html">Sources of protein elit</a></h4>
-                                                    <span class="date"><i class="fas fa-calendar-alt"></i>January 30, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="rc-post-item">
-                                                <div class="thumb">
-                                                    <a href="blog-details.html"><img src="{% static "img/blog/post_img02.jpg" %}" alt=""></a>
-                                                </div>
-                                                <div class="content">
-                                                    <h4 class="title"><a href="blog-details.html">Different Types Meat</a></h4>
-                                                    <span class="date"><i class="fas fa-calendar-alt"></i>January 30, 2023</span>
-                                                </div>
-                                            </div>
-                                            <div class="rc-post-item">
-                                                <div class="thumb">
-                                                    <a href="blog-details.html"><img src="{% static "img/blog/post_img03.jpg" %}" alt=""></a>
-                                                </div>
-                                                <div class="content">
-                                                    <h4 class="title"><a href="blog-details.html">Eat meat and poultry</a></h4>
-                                                    <span class="date"><i class="fas fa-calendar-alt"></i>January 30, 2023</span>
+                                                    <h4 class="title"><a href="{% url 'blog:blog_detail' post1.pk %}">{{post1.title}}</a></h4>
+                                                    <span class="date"><i class="fas fa-calendar-alt"></i>{{post1.created_at}}</span>
                                                 </div>
                                             </div>
                                         </div>
+                                        {% endfor %}
                                     </div>
                                     <div class="blog-widget">
-                                        <div class="sidebar-add-banner">
-                                            <a href="#"><img src="{% static 'img/blog/add_banner.jpg' %}" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-widget">
-                                        <h4 class="sw-title">Tags</h4>
+                                        <h4 class="sw-title">{% translate "Tags" %}</h4>
                                         <div class="sidebar-tag-list">
                                             <ul class="list-wrap">
-                                                <li><a href="#">Food</a></li>
-                                                <li><a href="#">Business</a></li>
-                                                <li><a href="#">Types</a></li>
-                                                <li><a href="#">Cow Meats</a></li>
-                                                <li><a href="#">Protein</a></li>
-                                                <li><a href="#">Horse Meat</a></li>
+                                                <li><a href="#">{% translate "Food" %}</a></li>
+                                                <li><a href="#">{% translate "Business" %}</a></li>
+                                                <li><a href="#">{% translate "Types" %}</a></li>
+                                                <li><a href="#">{% translate "Cow Meats" %}</a></li>
+                                                <li><a href="#">{% translate "Protein" %}</a></li>
+                                                <li><a href="#">{% translate "Horse Meat" %}</a></li>
                                             </ul>
                                         </div>
                                     </div>

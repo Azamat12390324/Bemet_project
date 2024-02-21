@@ -16,3 +16,4 @@ class Contacts(admin.ModelAdmin):
     search_fields = ( 'email',)
     # list_filter = ("created_at",)
     
+    

@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Bemet - Butcher & Meat Shop HTML Template</title>
+        <title>{% translate "Bemet - Butcher & Meat Shop HTML Template" %}</title>
         <meta name="description" content="Bemet - Butcher & Meat Shop HTML Template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -67,10 +67,10 @@
                                     </div>
                                     <div class="header-top-social">
                                         <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://twitter.com/?la"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -124,32 +124,18 @@
                                 <nav class="menu-nav">
                                     <div class="navbar-wrap main-menu d-none d-lg-flex">
                                         <ul class="navigation">
-                                            <li class="active menu-item-has-children"><a href="#">Home</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">Home One</a></li>
-                                                    <li class="active"><a href="index-2.html">Home Two</a></li>
-                                                    <li><a href="index-3.html">Home Three</a></li>
-                                                </ul>
+                                            <li class="active menu-item-has-children"><a href="{% url 'home:home' %}">{% translate "Home" %}</a>
                                             </li>
-                                            <li><a href="about.html">ABOUT US</a></li>
-                                            <li class="menu-item-has-children"><a href="#">PRODUCTS</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="shop.html">Shop One</a></li>
-                                                    <li><a href="shop-2.html">Shop Two</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                </ul>
+                                            <li><a href="{% url 'about:about' %}">{% translate "ABOUT US" %}</a></li>
+                                            <li class="menu-item-has-children"><a href="{% url 'shop:shop' %}">{% translate "PRODUCTS" %}</a>
                                             </li>
-                                            <li class="menu-item-has-children"><a  href="{% url 'blog:blog' %}">BLOG</a>
+                                            <li class="menu-item-has-children"><a  href="{% url 'blog:blog' %}">{% translate "BLOG" %}</a>
                                                 
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">PAGES</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="services.html">Services Page</a></li>
-                                                    <li><a href="services-details.html">Services Details</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                </ul>
+                                            <li class="menu-item-has-children"><a href="{% url 'pages:service' %}">{% translate "PAGES" %}</a>
                                             </li>
-                                            <li><a href="{% url 'contact:contact'%}">Contact</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "Contact" %}</a></li>
+                                            <li><a href="{% url 'regestration:regestration' %}">{% translate "Registration" %}</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -167,11 +153,11 @@
                                     </div>
                                     <div class="social-links">
                                         <ul class="clearfix list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://twitter.com/?la"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -222,9 +208,9 @@
                                         <div class="slider-icon" data-animation-in="fadeInUp" data-delay-in=".2" data-duration-in=".6">
                                             <img src="{% static 'img/icons/slider_icon.png' %}" alt="">
                                         </div>
-                                        <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".4" data-duration-in=".6">Fresh Meat</h2>
-                                        <span class="sub-title" data-animation-in="fadeInUp" data-delay-in=".6" data-duration-in=".6">Butcher & Meat shop</span>
-                                        <a href="shop.html" class="btn" data-animation-in="fadeInUp" data-delay-in=".8" data-duration-in=".6">order now</a>
+                                        <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".4" data-duration-in=".6">{% translate "Fresh Meat" %}</h2>
+                                        <span class="sub-title" data-animation-in="fadeInUp" data-delay-in=".6" data-duration-in=".6">{% translate "Butcher & Meat shop" %}</span>
+                                        <a href="{% url 'shop:shop' %}" class="btn" data-animation-in="fadeInUp" data-delay-in=".8" data-duration-in=".6">{% translate "order now" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,9 +224,9 @@
                                         <div class="slider-icon" data-animation-in="fadeInUp" data-delay-in=".2" data-duration-in=".6">
                                             <img src="{% static 'img/icons/slider_icon.png' %}" alt="">
                                         </div>
-                                        <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".4" data-duration-in=".6">Fresh Meat</h2>
-                                        <span class="sub-title" data-animation-in="fadeInUp" data-delay-in=".6" data-duration-in=".6">Butcher & Meat shop</span>
-                                        <a href="shop.html" class="btn" data-animation-in="fadeInUp" data-delay-in=".8" data-duration-in=".6">order now</a>
+                                        <h2 class="title" data-animation-in="fadeInUp" data-delay-in=".4" data-duration-in=".6">{% translate "Fresh Meat" %}</h2>
+                                        <span class="sub-title" data-animation-in="fadeInUp" data-delay-in=".6" data-duration-in=".6">{% translate "Butcher & Meat shop" %}</span>
+                                        <a href="shop.html" class="btn" data-animation-in="fadeInUp" data-delay-in=".8" data-duration-in=".6">{% translate "order now" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -267,19 +253,19 @@
                                 <li>
                                     <div class="footer-social">
                                         <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://twitter.com/?la"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+                                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="order-lg-3">
                                     <div class="footer-newsletter">
-                                        <h4 class="title">Our Newsletter</h4>
+                                        <h4 class="title">{% translate "Our Newsletter" %}</h4>
                                         <form action="#">
                                             <input type="email" placeholder="Enter your email...">
-                                            <button type="submit">subscribe</button>
+                                            <button type="submit">{% translate "subscribe" %}</button>
                                         </form>
                                     </div>
                                 </li>
@@ -292,44 +278,44 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="footer-widget">
-                                    <h4 class="fw-title">about andspa</h4>
+                                    <h4 class="fw-title">{% translate "about andspa" %}</h4>
                                     <div class="footer-contact">
                                         <ul class="list-wrap">
-                                            <li>Chirchik Sity Dom-3</li>
+                                            <li>{% translate "Chirchik Sity Dom-3" %}</li>
                                             <li><a href="tel:0123456789">+99890 330 20 29</a></li>
                                             <li><a href="mailto:info@bemet.com">info@bemet.com</a></li>
                                         </ul>
                                     </div>
                                     <div class="footer-content">
-                                        <h4 class="title">Open Hours</h4>
-                                        <p>Sunday to Friday <span>06:00-18:00</span></p>
+                                        <h4 class="title">{% translate "Open Hours" %}</h4>
+                                        <p>{% translate "Sunday to Friday" %} <span>06:00-18:00</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="footer-widget">
-                                    <h4 class="fw-title">Important Links</h4>
+                                    <h4 class="fw-title">{% translate "Important Links" %}</h4>
                                     <div class="footer-link">
                                         <ul class="list-wrap">
-                                            <li><a href="contact.html">CURATION</a></li>
-                                            <li><a href="about.html">ABOUT US</a></li>
-                                            <li><a href="contact.html">MY ACCOUNT</a></li>
-                                            <li><a href="contact.html">CONTACT</a></li>
-                                            <li><a href="contact.html">SHIPPING & RETURNS</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "CURATION" %}</a></li>
+                                            <li><a href="{% url 'about:about' %}"">{% translate "ABOUT US" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "MY ACCOUNT" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "CONTACT" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "SHIPPING & RETURNS" %}</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-4">
                                 <div class="footer-widget">
-                                    <h4 class="fw-title">CATEGORIES</h4>
+                                    <h4 class="fw-title">{% translate "CATEGORIES" %}</h4>
                                     <div class="footer-link">
                                         <ul class="list-wrap">
-                                            <li><a href="contact.html">How to Order</a></li>
-                                            <li><a href="contact.html">Delivery Info</a></li>
-                                            <li><a href="contact.html">FAQs</a></li>
-                                            <li><a href="contact.html">Terms</a></li>
-                                            <li><a href="contact.html">Privacy Policy</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "How to Order" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "Delivery Info" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "FAQs" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "Terms" %}</a></li>
+                                            <li><a href="{% url 'contact:contact'%}">{% translate "Privacy Policy" %}</a></li>
                                         </ul>
                                     </div>
                                 </div>

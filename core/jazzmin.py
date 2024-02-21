@@ -1,6 +1,6 @@
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "Bemet Admin",
+    "site_title": "",
 
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_header": "Bemet",
@@ -9,7 +9,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Bemet",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "Bemet/img/logo.png",
+    "site_logo": "bemet/img/logo.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
@@ -27,7 +27,7 @@ JAZZMIN_SETTINGS = {
     "welcome_sign": "Welcome to the Bemet",
 
     # Copyright on the footer
-    "copyright": "Acme Bemet Ltd",
+    "copyright": "Bemet",
 
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string 
@@ -101,16 +101,24 @@ JAZZMIN_SETTINGS = {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
+        "auth.Contact":"fa-address-book",
+        
+      
+
+
+        
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
     "default_icon_children": "fas fa-circle",
+   
+
 
     #################
     # Related Modal #
     #################
     # Use modals instead of popups
-    "related_modal_active": False,
+    "related_modal_active": True,
 
     #############
     # UI Tweaks #
@@ -121,7 +129,7 @@ JAZZMIN_SETTINGS = {
     # Whether to link font from fonts.googleapis.com (use custom_css to supply font otherwise)
     "use_google_fonts_cdn": True,
     # Whether to show the UI customizer on the sidebar
-    "show_ui_builder": False,
+    "show_ui_builder": True,
 
     ###############
     # Change view #
@@ -136,4 +144,6 @@ JAZZMIN_SETTINGS = {
     # override change forms on a per modeladmin basis
     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
     # Add a language dropdown into the admin
-}    
+    "language_chooser": False,
+}
+

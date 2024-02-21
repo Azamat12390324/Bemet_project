@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 16:52+0500\n"
-"PO-Revision-Date: 2024-01-23 16:59+0500\n"
+"POT-Creation-Date: 2024-02-20 15:42+0500\n"
+"PO-Revision-Date: 2024-02-20 15:51+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -20,6 +20,90 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Poedit 3.0.1\n"
 
+#: about/models.py:17 blog/models.py:10 blog/models.py:63 shop/models.py:11
+#: shop/models.py:16
+msgid "title"
+msgstr "заголовок"
+
+#: about/models.py:25 blog/models.py:77 shop/models.py:28
+msgid "Post"
+msgstr "Почта"
+
+#: about/models.py:26 blog/models.py:78 shop/models.py:29
+msgid "Posts"
+msgstr "Сообщения"
+
+#: blog/models.py:10 shop/models.py:11
+msgid "Write title"
+msgstr "Напишите название"
+
+#: blog/models.py:11 shop/models.py:12
+msgid "Write author"
+msgstr "Написать автора"
+
+#: blog/models.py:11 blog/models.py:44 shop/models.py:12
+msgid "author"
+msgstr "автор"
+
+#: blog/models.py:12 shop/models.py:13
+msgid "photo"
+msgstr "Фото"
+
+#: blog/models.py:20
+msgid "Blog"
+msgstr "Блог"
+
+#: blog/models.py:21
+msgid "Blogs"
+msgstr "Блоги"
+
+#: blog/models.py:25
+#, fuzzy
+#| msgid "name"
+msgid "full_name"
+msgstr "имя"
+
+#: blog/models.py:26 blog/models.py:66 shop/models.py:18
+msgid "image"
+msgstr "изображение"
+
+#: blog/models.py:45
+msgid "authors"
+msgstr "авторы"
+
+#: blog/models.py:50 blog/models.py:82 contact/models.py:7
+msgid "name"
+msgstr "имя"
+
+#: blog/models.py:58
+msgid "Tag"
+msgstr "Ярлык"
+
+#: blog/models.py:59 templates/blog-details.html:74
+#: templates/blog-details.html:247 templates/blog.html:89
+msgid "Tags"
+msgstr "Теги"
+
+#: blog/models.py:68
+msgid "tag"
+msgstr "ярлык"
+
+#: blog/models.py:83 contact/models.py:8 contact/models.py:22
+msgid "email"
+msgstr "электронная почта"
+
+#: blog/models.py:84
+msgid "comment"
+msgstr "комментарий"
+
+#: blog/models.py:85
+msgid "post"
+msgstr "почта"
+
+#: blog/models.py:93
+msgid "Comment"
+msgstr "Комментарий"
+
 #: contact/abstract.py:14
 msgid "active"
 msgstr "активный"
@@ -27,14 +111,6 @@ msgstr "активный"
 #: contact/abstract.py:21
 msgid "order"
 msgstr "заказ"
-
-#: contact/models.py:7
-msgid "name"
-msgstr "имя"
-
-#: contact/models.py:8 contact/models.py:22
-msgid "email"
-msgstr "электронная почта"
 
 #: contact/models.py:9
 msgid "message"
@@ -56,57 +132,782 @@ msgstr "Веб-сайт"
 msgid "address"
 msgstr "адрес"
 
-#: templates/contact.html:11
-msgid "Contact us"
-msgstr "Связаться с нами"
+#: templates/about.html:12
+msgid "About us"
+msgstr "О нас"
 
-#: templates/contact.html:14
+#: templates/about.html:15 templates/blog-details.html:14
+#: templates/blog.html:13 templates/contact.html:18
+#: templates/layouts/base.html:127 templates/services.html:14
+#: templates/shop-details.html:16 templates/shop.html:14
 msgid "Home"
 msgstr "Дом"
 
+#: templates/about.html:16
+msgid "about us"
+msgstr "о нас"
+
+#: templates/about.html:30
+msgid "About Bemet"
+msgstr "О Бемете"
+
+#: templates/about.html:31
+msgid "Why Choose Our Shop"
+msgstr "Почему выбирают наш магазин"
+
+#: templates/about.html:53
+msgid "learn more"
+msgstr "узнать больше"
+
+#: templates/about.html:77
+msgid "Meet Our Team"
+msgstr "Познакомьтесь с нашей командой"
+
+#: templates/about.html:78
+msgid "Our CREATIVE Team"
+msgstr "Наша ТВОРЧЕСКАЯ команда"
+
+#: templates/about.html:80
+msgid "BUY SMOKEY GRILLED meats and CHICKEN"
+msgstr "КУПИТЬ МЯСО И КУРИЦУ НА ГРИЛЕ"
+
+#: templates/about.html:80
+msgid "GET catling"
+msgstr "ПОЛУЧИТЬ"
+
+#: templates/about.html:80
+msgid "FREE"
+msgstr "БЕСПЛАТНО"
+
+#: templates/about.html:81 templates/services.html:127
+msgid "Shop Now"
+msgstr "Купить сейчас"
+
+#: templates/about.html:125 templates/home.html:41 templates/services.html:29
+#: templates/services.html:169
+msgid "Customer Quotes"
+msgstr "Цитаты клиентов"
+
+#: templates/about.html:126 templates/home.html:42 templates/services.html:170
+msgid "Frequently"
+msgstr "Часто"
+
+#: templates/about.html:126 templates/home.html:42 templates/services.html:170
+msgid "Asked"
+msgstr "Спросил"
+
+#: templates/about.html:126
+msgid "Questions"
+msgstr "Вопросы"
+
+#: templates/about.html:133 templates/home.html:49 templates/services.html:177
+msgid "hamburg Meat is animal flesh food."
+msgstr "гамбург Мясо – это пища из мяса животных."
+
+#: templates/about.html:138 templates/about.html:150 templates/about.html:162
+#: templates/home.html:66 templates/home.html:78 templates/services.html:182
+#: templates/services.html:194 templates/services.html:206
+msgid ""
+"Meat provide well shaped fresh and the organic meat well animals is Humans "
+"have hunted schistoric times"
+msgstr ""
+"Мясо обеспечивает хорошую форму в свежем виде, а мясо животных является "
+"органическим. Люди охотились в древние времена."
+
+#: templates/about.html:145 templates/home.html:61 templates/services.html:189
+msgid "Revolution allowed the of animals"
+msgstr "Революция позволила управлять животными"
+
+#: templates/about.html:157 templates/home.html:73 templates/services.html:201
+msgid "Meat is animal flesh food."
+msgstr "Мясо – это пища из мяса животных."
+
+#: templates/blog-details.html:11 templates/blog-details.html:15
+msgid "Blog Details"
+msgstr "Подробности блога"
+
+#: templates/blog-details.html:38
+msgid "Jon Deo"
+msgstr "Джон Део"
+
+#: templates/blog-details.html:39 templates/blog.html:39
+msgid "Comm"
+msgstr "Связь"
+
+#: templates/blog-details.html:40 templates/blog.html:40
+#: templates/services.html:62
+msgid "horse meat"
+msgstr "конина"
+
+#: templates/blog-details.html:43
+msgid "Necessary for the Human Body"
+msgstr "Необходим для человеческого организма"
+
+#: templates/blog-details.html:44
+msgid ""
+"Meat provide well shaped fresh and the organic meat well animals is Humans "
+"ha hunted schistoric times meat, the flesh or other edible parts of animals "
+"usually domesticated cattle, swine, and sheep used for food, including not "
+"only the muscles also the tendons.debut novel from poet Oli Hazzard, "
+"consists of a single, 50,000\\-word sentence. An epistolary fiction "
+"addressed to an unidentified email recipient, the novel is modelled after "
+"the Japanese prose genre of the zuihitsu."
+msgstr ""
+"Мясо обеспечивает хорошую форму в свежем и органическом виде. Животные - "
+"люди, охотившиеся в исторические времена на мясо, плоть или другие съедобные "
+"части животных, обычно одомашненных крупного рогатого скота, свиней и овец, "
+"используемых в пищу, включая не только мышцы, но и сухожилия. Дебютный роман "
+"поэта Оли Хаззарда, состоит из одного предложения длиной в 50 000 слов. "
+"Эпистолярный роман, адресованный неизвестному получателю электронного "
+"письма, создан по образцу японского прозаического жанра дзуихицу."
+
+#: templates/blog-details.html:46
+msgid ""
+"“ Meat provide well shaped fresh and the organic meat well animals is Humans "
+"ha hunted schistoric times meat, the flesh or other edible parts of animals "
+"usually domesticated cattle, swine, and sheep used for food, including not "
+"only the muscles”"
+msgstr ""
+"«Мясо обеспечивает хорошую форму, свежее и органическое мясо, а животные — "
+"люди, охотившиеся в древние времена на мясо, плоть или другие съедобные "
+"части животных, обычно одомашненных крупного рогатого скота, свиней и овец, "
+"используемых в пищу, включая не только мышцы»"
+
+#: templates/blog-details.html:47
+msgid "Mark Alaxander"
+msgstr "Марк Александр"
+
+#: templates/blog-details.html:49 templates/blog-details.html:69
+msgid ""
+"Humans ha hunted schistoric times meat, the flesh or other edible parts of "
+"animals usually domesticated cattle, swine, and sheep used for food, "
+"including not only the muscles also the tendons.debut novel from poet Oli "
+"Hazzard, consists of a single, 50,000\\-word sentence. An epistolary fiction "
+"addressed to an unidentified email recipient, the novel is modelled after "
+"the Japanese."
+msgstr ""
+"В исторические времена люди охотились на мясо, плоть или другие съедобные "
+"части животных, обычно домашнего крупного рогатого скота, свиней и овец, "
+"используемых в пищу, включая не только мышцы, но и сухожилия. Дебютный роман "
+"поэта Оли Хаззарда состоит из одного, 50 000 голов. -словное предложение. "
+"Эпистолярный роман, адресованный неизвестному получателю электронного "
+"письма, создан по образцу японцев."
+
+#: templates/blog-details.html:59
+#, fuzzy
+#| msgid "Fresh Meat"
+msgid "Garden Fresh Market"
+msgstr "Свежее мясо"
+
+#: templates/blog-details.html:60
+msgid ""
+"Meat provide well shaped fresh and is organic meat well animals Humans have "
+"hunted schistoic times thats meat, the flesh other edible parts  animal "
+"usually domesti cated the cattle, animals is Humans have hunted have hunted "
+"animal."
+msgstr ""
+"Мясо обеспечивает хорошую форму, свежее и является органическим мясом "
+"животных. Люди охотились в древние времена, это мясо, мясо и другие "
+"съедобные части, животные обычно одомашнивали крупный рогатый скот, животные "
+"- это люди, на которых охотились люди."
+
+#: templates/blog-details.html:62
+msgid "Humans Meat provide well shaped fresh"
+msgstr "Человеческое мясо обеспечивает свежесть хорошей формы."
+
+#: templates/blog-details.html:63
+msgid "Meat provide well shaped fresh"
+msgstr "Мясо обеспечивает хорошую форму в свежем виде."
+
+#: templates/blog-details.html:79
+msgid "Food,"
+msgstr "Еда,"
+
+#: templates/blog-details.html:80 templates/blog-details.html:202
+#: templates/blog-details.html:255 templates/blog.html:65
+#: templates/blog.html:97
+msgid "Horse Meat"
+msgstr "Конина"
+
+#: templates/blog-details.html:81 templates/blog-details.html:254
+#: templates/blog.html:96
+msgid "Protein"
+msgstr "Белок"
+
+#: templates/blog-details.html:87
+msgid "Share"
+msgstr "Делиться"
+
+#: templates/blog-details.html:105
+msgid "Alaxzender Pailot"
+msgstr "Алакссендер Пайлот"
+
+#: templates/blog-details.html:106
+msgid ""
+"Humans ha hunted schistoric times meat, the flesh or other edible parts of "
+"animals usually domesticated cattle, swine."
+msgstr ""
+"В древние времена люди охотились на мясо, плоть или другие съедобные части "
+"животных, обычно одомашненных крупного рогатого скота и свиней."
+
+#: templates/blog-details.html:118
+#, fuzzy
+#| msgid "Comment"
+msgid "02 Comments"
+msgstr "Комментарий"
+
+#: templates/blog-details.html:128
+msgid "Emely Jonson"
+msgstr "Эмили Джонсон"
+
+#: templates/blog-details.html:130 templates/blog-details.html:146
+#, fuzzy
+#| msgid ""
+#| "Humans ha hunted schistoric times meat, the flesh or other edible parts "
+#| "of animals usually domesticated cattle, swine."
+msgid ""
+"Dumans ha hunted schistoric times meat, the flesh or other edible parts of "
+"animals usually domesticated cattle, swine."
+msgstr ""
+"В древние времена люди охотились на мясо, плоть или другие съедобные части "
+"животных, обычно одомашненных крупного рогатого скота и свиней."
+
+#: templates/blog-details.html:132 templates/blog-details.html:148
+msgid "Reply"
+msgstr "Отвечать"
+
+#: templates/blog-details.html:144
+msgid "Rosalina D."
+msgstr "Розалина Д."
+
+#: templates/blog-details.html:159
+#, fuzzy
+#| msgid "Comment"
+msgid "Leave A Comment"
+msgstr "Комментарий"
+
+#: templates/blog-details.html:181
+msgid "Your email address will not be published. Required fields are marked *"
+msgstr ""
+"Ваш электронный адрес не будет опубликован. Необходимые поля отмечены *"
+
+#: templates/blog-details.html:183
+msgid "send Comment"
+msgstr "отправить комментарий"
+
+#: templates/blog-details.html:190 templates/blog.html:53
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/blog-details.html:199 templates/blog.html:62
+#: templates/shop.html:100
+msgid "Category"
+msgstr "Категория"
+
+#: templates/blog-details.html:203 templates/blog.html:66
+msgid "Branding"
+msgstr "Брендинг"
+
+#: templates/blog-details.html:204 templates/blog.html:67
+msgid "Gallery"
+msgstr "Галерея"
+
+#: templates/blog-details.html:205 templates/blog.html:68
+#: templates/layouts/base.html:211 templates/layouts/base.html:227
+#, fuzzy
+#| msgid "Horse Meat"
+msgid "Fresh Meat"
+msgstr "Конина"
+
+#: templates/blog-details.html:210
+msgid "Recent Post"
+msgstr "Недавний пост"
+
+#: templates/blog-details.html:217
+msgid "Sources of protein elit"
+msgstr "Источники белковой элиты"
+
+#: templates/blog-details.html:218 templates/blog-details.html:227
+#: templates/blog-details.html:236
+msgid "January 30, 2023"
+msgstr "30 января 2023 г."
+
+#: templates/blog-details.html:226
+msgid "Different Types Meat"
+msgstr "Различные виды мяса"
+
+#: templates/blog-details.html:235
+msgid "Eat meat and poultry"
+msgstr "Ешьте мясо и птицу"
+
+#: templates/blog-details.html:250 templates/blog.html:92
+#, fuzzy
+#| msgid "Food"
+msgid "Food"
+msgstr "Еда"
+
+#: templates/blog-details.html:251 templates/blog.html:93
+msgid "Business"
+msgstr "Бизнес"
+
+#: templates/blog-details.html:252 templates/blog.html:94
+msgid "Types"
+msgstr "Типы"
+
+#: templates/blog-details.html:253
+#, fuzzy
+#| msgid "Horse Meat"
+msgid "Cow Meat"
+msgstr "Конина"
+
+#: templates/blog.html:10
+#, fuzzy
+#| msgid "Blog"
+msgid "Our Blog"
+msgstr "Блог"
+
+#: templates/blog.html:14
+msgid "our blog"
+msgstr "наш блог"
+
+#: templates/blog.html:45
+#, fuzzy
+#| msgid "Read more"
+msgid "Read more"
+msgstr "Читать далее"
+
+#: templates/blog.html:95
+#, fuzzy
+#| msgid "Horse Meat"
+msgid "Cow Meats"
+msgstr "Конина"
+
 #: templates/contact.html:15
+msgid "Contact us"
+msgstr "Связаться с нами"
+
+#: templates/contact.html:19 templates/layouts/base.html:137
 msgid "Contact"
 msgstr "Контакт"
 
-#: templates/contact.html:37
+#: templates/contact.html:41
 msgid "Phone"
 msgstr "Телефон"
 
-#: templates/contact.html:48
+#: templates/contact.html:52
 msgid "Email"
 msgstr "Электронная почта"
 
-#: templates/contact.html:59
+#: templates/contact.html:63
 msgid "Address"
 msgstr "Адрес"
 
-#: templates/contact.html:70
+#: templates/contact.html:74
 msgid "HeadOffice"
 msgstr "Головной офис"
 
-#: templates/contact.html:85
+#: templates/contact.html:89
 msgid "Experien"
 msgstr "Экспериан"
 
-#: templates/contact.html:86
-msgid "Get in"
-msgstr ""
-
-#: templates/contact.html:86
-msgid "Touch"
-msgstr ""
-
-#: templates/contact.html:88
+#: templates/contact.html:92
 msgid "Meat provide well shaped fresh and the organic meat well"
 msgstr "Мясо обеспечивает хорошую форму, свежее и органическое."
 
-#: templates/contact.html:88
+#: templates/contact.html:92
 msgid "animals is Humans have hunted schistoric"
 msgstr "животные - это люди охотились исторический"
 
-#: templates/contact.html:100
+#: templates/contact.html:105
 msgid "Send Message"
+msgstr "Отправить сообщение"
+
+#: templates/home.html:15 templates/services.html:143
+msgid "Get a Free Quote"
+msgstr "Получить бесплатное предложение"
+
+#: templates/home.html:17 templates/services.html:145
+msgid "buy now"
+msgstr "купить сейчас"
+
+#: templates/home.html:18 templates/services.html:146
+msgid "make a call"
+msgstr "позвонить"
+
+#: templates/home.html:42 templates/services.html:170
+#, fuzzy
+#| msgid "Questions."
+msgid "Questions."
+msgstr "Вопросы."
+
+#: templates/home.html:54
+msgid ""
+" Meat provide well shaped fresh and the organic meat well animals is Humans "
+"have hunted schistoric times"
 msgstr ""
+"Мясо обеспечивает хорошую форму в свежем виде, а мясо животных является "
+"органическим. Люди охотились в древние времена."
+
+#: templates/layouts/base.html:8
+msgid "Bemet - Butcher & Meat Shop HTML Template"
+msgstr "Bemet - HTML-шаблон мясной лавки"
+
+#: templates/layouts/base.html:129 templates/layouts/base.html:301
+msgid "ABOUT US"
+msgstr "О НАС"
+
+#: templates/layouts/base.html:130
+msgid "PRODUCTS"
+msgstr "ПРОДУКТЫ"
+
+#: templates/layouts/base.html:132
+msgid "BLOG"
+msgstr "БЛОГ"
+
+#: templates/layouts/base.html:135
+msgid "PAGES"
+msgstr "СТРАНИЦЫ"
+
+#: templates/layouts/base.html:138 templates/regestration/register.html:10
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/layouts/base.html:212 templates/layouts/base.html:228
+msgid "Butcher & Meat shop"
+msgstr "Мясной магазин"
+
+#: templates/layouts/base.html:213 templates/layouts/base.html:229
+#, fuzzy
+#| msgid "order"
+msgid "order now"
+msgstr "заказ"
+
+#: templates/layouts/base.html:265
+msgid "Our Newsletter"
+msgstr "Наш информационный бюллетень"
+
+#: templates/layouts/base.html:268
+msgid "subscribe"
+msgstr "подписаться"
+
+#: templates/layouts/base.html:281
+#, fuzzy
+#| msgid "about andspa"
+msgid "about andspa"
+msgstr "об АндСПА"
+
+#: templates/layouts/base.html:284
+msgid "Chirchik Sity Dom-3"
+msgstr "Чирчик Сити Дом-3"
+
+#: templates/layouts/base.html:290
+msgid "Open Hours"
+msgstr "Открытые часы"
+
+#: templates/layouts/base.html:291
+msgid "Sunday to Friday"
+msgstr "С воскресенья по пятницу"
+
+#: templates/layouts/base.html:297
+msgid "Important Links"
+msgstr "Важные ссылки"
+
+#: templates/layouts/base.html:300
+msgid "CURATION"
+msgstr "КУРАЦИЯ"
+
+#: templates/layouts/base.html:302
+msgid "MY ACCOUNT"
+msgstr "МОЙ СЧЕТ"
+
+#: templates/layouts/base.html:303
+msgid "CONTACT"
+msgstr "КОНТАКТ"
+
+#: templates/layouts/base.html:304
+msgid "SHIPPING & RETURNS"
+msgstr "ДОСТАВКА И ВОЗВРАТ"
+
+#: templates/layouts/base.html:311
+msgid "CATEGORIES"
+msgstr "КАТЕГОРИИ"
+
+#: templates/layouts/base.html:314
+msgid "How to Order"
+msgstr "Как заказать"
+
+#: templates/layouts/base.html:315
+msgid "Delivery Info"
+msgstr "Как заказать"
+
+#: templates/layouts/base.html:316
+msgid "FAQs"
+msgstr "Как заказать"
+
+#: templates/layouts/base.html:317
+msgid "Terms"
+msgstr "Условия"
+
+#: templates/layouts/base.html:318
+msgid "Privacy Policy"
+msgstr "политика конфиденциальности"
+
+#: templates/services.html:11 templates/services.html:15
+msgid "Our Service"
+msgstr "Наш сервис"
+
+#: templates/services.html:30
+msgid "Organic Premium"
+msgstr "Органический Премиум"
+
+#: templates/services.html:30 templates/services.html:114
+msgid "Quality"
+msgstr "Качество"
+
+#: templates/services.html:32
+msgid "More About"
+msgstr "Больше о"
+
+#: templates/services.html:34
+#, fuzzy
+#| msgid "About us"
+msgid "About"
+msgstr "О нас"
+
+#: templates/services.html:46
+msgid "duck meat"
+msgstr "утиное мясо"
+
+#: templates/services.html:54
+#, fuzzy
+#| msgid "horse meat"
+msgid "chicken meat"
+msgstr "конина"
+
+#: templates/services.html:70
+#, fuzzy
+#| msgid "horse meat"
+msgid "sheep meat"
+msgstr "конина"
+
+#: templates/services.html:113
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Services"
+msgstr "Наш сервис"
+
+#: templates/services.html:114
+#, fuzzy
+#| msgid "Organic Premium"
+msgid "Offer Premium"
+msgstr "Органический Премиум"
+
+#: templates/services.html:116
+#, fuzzy
+#| msgid "Meat provide well shaped fresh and the organic meat well"
+msgid ""
+"We provide well shaped fresh and organic meat from our farm very hygienic "
+"way."
+msgstr "Мясо обеспечивает хорошую форму, свежее и органическое."
+
+#: templates/services.html:117
+msgid "Shaped fresh and organic meat our farm"
+msgstr "Формованное свежее и органическое мясо на нашей ферме"
+
+#: templates/services.html:123
+#: venv/lib/python3.10/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Пятница"
+
+#: templates/shop-details.html:13 templates/shop-details.html:17
+#, fuzzy
+#| msgid "Blog Details"
+msgid "Shop Details"
+msgstr "Подробности блога"
+
+#: templates/shop-details.html:71
+#, fuzzy
+#| msgid "Necessary for the Human Body"
+msgid "Necessary Human Body"
+msgstr "Необходим для человеческого организма"
+
+#: templates/shop-details.html:82
+msgid "In stock"
+msgstr "В наличии"
+
+#: templates/shop-details.html:84
+msgid "Hurry Up! Sale ends in:"
+msgstr "Торопиться! Распродажа заканчивается через:"
+
+#: templates/shop-details.html:87
+msgid ""
+"Meat provide well shaped fresh and the organic meat well animals is Humans "
+"have hunted schistoric times meat, the flesh"
+msgstr ""
+"Мясо обеспечивает хорошую форму, свежее и органическое мясо, а животные - "
+"люди охотились в древние времена на мясо, плоть."
+
+#: templates/shop-details.html:89
+msgid "Quantity"
+msgstr "Количество"
+
+#: templates/shop-details.html:96
+msgid "PURCHASE"
+msgstr "ПОКУПКА"
+
+#: templates/shop-details.html:99
+msgid "Buy it now"
+msgstr "Купить сейчас"
+
+#: templates/shop-details.html:101
+msgid "GUARANTEED SAFE CHECKOUT"
+msgstr "ГАРАНТИРОВАННАЯ БЕЗОПАСНАЯ КАССА"
+
+#: templates/shop-details.html:105
+msgid "Add to Wishlist"
+msgstr "Добавить в список желаний"
+
+#: templates/shop-details.html:108
+msgid "SKU"
+msgstr "Артикул"
+
+#: templates/shop-details.html:112
+#, fuzzy
+#| msgid "CATEGORIES"
+msgid "CATEGORY"
+msgstr "КАТЕГОРИИ"
+
+#: templates/shop-details.html:114
+msgid "lipstick"
+msgstr "помада"
+
+#: templates/shop-details.html:134
+msgid ""
+"committed are products that have been produced using sustainable fibers or "
+"processes, reducing their environmental impact. Umino’s goal is to support "
+"the implementation of practices more committed to the environment. I am like "
+"a freight train. Working on the details, twisting and playing with them over "
+"the years, but always staying on the same track I design from instinct. It’s "
+"the only way I know how to live."
+msgstr ""
+"приверженными являются продукты, которые были произведены с использованием "
+"экологически чистых волокон или процессов, снижающих их воздействие на "
+"окружающую среду. Цель Umino — поддержать внедрение практик, более "
+"заботящихся об окружающей среде. Я как товарный поезд. Работая над деталями, "
+"изменяя и играя с ними на протяжении многих лет, но всегда оставаясь на "
+"одном и том же пути, я проектирую инстинктивно. Это единственный способ "
+"жить, который я знаю."
+
+#: templates/shop-details.html:136
+msgid "Committed are products that have been produced"
+msgstr "Обязательными являются продукты, которые были произведены"
+
+#: templates/shop-details.html:137
+msgid "It’s the only way I know how to live."
+msgstr "Это единственный способ жить, который я знаю."
+
+#: templates/shop-details.html:144
+#, fuzzy
+#| msgid "Customer Quotes"
+msgid "Customer Reviews"
+msgstr "Цитаты клиентов"
+
+#: templates/shop-details.html:147
+msgid "No reviews yet"
+msgstr "Пока нет отзывов"
+
+#: templates/shop-details.html:150
+#, fuzzy
+#| msgid "Write title"
+msgid "Write a review"
+msgstr "Напишите название"
+
+#: templates/shop-details.html:168
+msgid "Organic Shop"
+msgstr "Органический магазин"
+
+#: templates/shop-details.html:169
+msgid "Related Products"
+msgstr "сопутствующие товары"
+
+#: templates/shop-details.html:180 templates/shop-details.html:205
+#: templates/shop-details.html:230 templates/shop-details.html:255
+#: templates/shop-details.html:280
+msgid "New"
+msgstr "Новый"
+
+#: templates/shop-details.html:184 templates/shop-details.html:259
+msgid "roast chicken"
+msgstr "жареный цыпленок"
+
+#: templates/shop-details.html:208 templates/shop-details.html:233
+#: templates/shop-details.html:258 templates/shop-details.html:283
+msgid "organic"
+msgstr "органический"
+
+#: templates/shop-details.html:209 templates/shop-details.html:284
+msgid "Venison meat"
+msgstr "Мясо оленины"
+
+#: templates/shop-details.html:234
+#, fuzzy
+#| msgid "horse meat"
+msgid "processed meat"
+msgstr "конина"
+
+#: templates/shop.html:11 templates/shop.html:15
+#, fuzzy
+#| msgid "Blog"
+msgid "Our Shop"
+msgstr "Блог"
+
+#: templates/shop.html:35
+msgid "Showing 1–09 of 20 results"
+msgstr "Показаны результаты 1–09 из 20"
+
+#: templates/shop.html:41
+msgid "Sort by Top Rating"
+msgstr "Сортировать по рейтингу"
+
+#: templates/shop.html:42
+msgid "Sort by popularity"
+msgstr "Сортировать по популярности"
+
+#: templates/shop.html:43
+msgid "Sort by average rating"
+msgstr "Сортировать по среднему рейтингу"
+
+#: templates/shop.html:44 templates/shop.html:45
+msgid "Sort by latest"
+msgstr "Сортировать по последним"
+
+#: templates/shop.html:86
+msgid "FILTER BY"
+msgstr "СОРТИРОВАТЬ ПО"
+
+#: templates/shop.html:91
+msgid "Price"
+msgstr "Цена"
+
+#: templates/shop.html:95
+msgid "Clear all"
+msgstr "Очистить все"
+
+#: templates/shop.html:106
+msgid "UI Templates"
+msgstr "Шаблоны пользовательского интерфейса"
+
+#: templates/shop.html:112
+msgid "Mutton"
+msgstr "Баранина"
+
+#: templates/shop.html:118
+msgid "Chicken"
+msgstr "Курица"
+
+#: templates/shop.html:125
+msgid "Latest Products"
+msgstr "Последние продукты"
 
 #: venv/lib/python3.10/site-packages/ckeditor_uploader/forms.py:6
 msgid "Search files"
@@ -160,8 +961,10 @@ msgid "&lsaquo; Prev"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:16
+#, fuzzy
+#| msgid "message"
 msgid "Messages"
-msgstr ""
+msgstr "сообщение"
 
 #: venv/lib/python3.10/site-packages/django/contrib/sitemaps/apps.py:8
 msgid "Site Maps"
@@ -471,8 +1274,10 @@ msgid "Duration"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1904
+#, fuzzy
+#| msgid "address"
 msgid "Email address"
-msgstr ""
+msgstr "адрес"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1929
 msgid "File path"
@@ -505,12 +1310,16 @@ msgid "Small integer"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2172
+#, fuzzy
+#| msgid "address"
 msgid "IPv4 address"
-msgstr ""
+msgstr "адрес"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2203
+#, fuzzy
+#| msgid "address"
 msgid "IP address"
-msgstr ""
+msgstr "адрес"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2296
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2297
@@ -583,8 +1392,10 @@ msgid "File"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/files.py:393
+#, fuzzy
+#| msgid "image"
 msgid "Image"
-msgstr ""
+msgstr "изображение"
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/json.py:26
 msgid "A JSON object"
@@ -752,8 +1563,10 @@ msgstr[3] ""
 
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:484
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:491
+#, fuzzy
+#| msgid "order"
 msgid "Order"
-msgstr ""
+msgstr "заказ"
 
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:499
 msgid "Delete"
@@ -805,8 +1618,10 @@ msgid "Clear"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/widgets.py:458
+#, fuzzy
+#| msgid "Frequently"
 msgid "Currently"
-msgstr ""
+msgstr "Часто"
 
 #: venv/lib/python3.10/site-packages/django/forms/widgets.py:459
 msgid "Change"
@@ -902,10 +1717,6 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:10
 msgid "Thursday"
-msgstr ""
-
-#: venv/lib/python3.10/site-packages/django/utils/dates.py:11
-msgid "Friday"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:12
@@ -1021,8 +1832,10 @@ msgid "jul"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:46
+#, fuzzy
+#| msgid "Tag"
 msgid "aug"
-msgstr ""
+msgstr "Ярлык"
 
 #: venv/lib/python3.10/site-packages/django/utils/dates.py:47
 msgid "sep"
@@ -1402,3 +2215,13 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:248
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Post"
+#~ msgid "Post2"
+#~ msgstr "Почта"
+
+#, fuzzy
+#~| msgid "Posts"
+#~ msgid "Posts2"
+#~ msgstr "Сообщения"
